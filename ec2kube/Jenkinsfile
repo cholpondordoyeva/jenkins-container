@@ -9,7 +9,7 @@ pipeline{
         TERRADESTROY="N"
         FIRST_DEPLOY="Y"
         STATE_BUCKET="bucket-terraform-chd-2023"
-        ANSIBLE_BUCKET_NAME="<ansible_bucket>"
+        ANSIBLE_BUCKET_NAME="bucket-ansible-chd-2023"
     }
 
 
