@@ -23,7 +23,7 @@ pipeline{
             }
             steps{
                 sh'''
-                aws s3 mb s3://bucket-terraform-chd-2023''
+                aws s3 mb s3://bucket-terraform-chd-2023'''
                 
             }
         }
@@ -330,7 +330,7 @@ pipeline{
                 stage("Destroy state bucket"){
                     steps{
                         sh '''
-                            aws s3 rb s3://<bucket_name> --force
+                            aws s3 rb s3://bucket-terraform-chd-2023 --force
                             '''
                     }
                 }
