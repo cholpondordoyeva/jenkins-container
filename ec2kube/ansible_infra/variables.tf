@@ -1,3 +1,3 @@
 variable "ansible_bucket"{
-    default="<bucket_name>"
+    default="bucket-ansible-chd-2023"
 }

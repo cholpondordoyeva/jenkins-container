@@ -8,7 +8,7 @@ pipeline{
         SKIP="N"
         TERRADESTROY="N"
         FIRST_DEPLOY="Y"
-        STATE_BUCKET="<bucket_name>"
+        STATE_BUCKET="bucket-terraform-chd-2023"
         ANSIBLE_BUCKET_NAME="<ansible_bucket>"
     }
 
@@ -23,7 +23,7 @@ pipeline{
             }
             steps{
                 sh'''
-                aws s3 mb s3://<bucket_name>'''
+                aws s3 mb s3://bucket-terraform-chd-2023''
                 
             }
         }

@@ -3,13 +3,13 @@ variable "cluster_name"{
 }
 
 variable "state_bucket"{
-    default = "<name>"
+    default = "bucket-terraform-eks-chd-2023"
 }
 
-variable "state_key"{
+/*variable "state_key"{
     default = "<key_val>"
 }
-
+*/
 variable "state_region"{
     default = "us-east-1"
 }

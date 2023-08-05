@@ -9,7 +9,7 @@ pipeline{
         SKIP="N"
         TERRADESTROY="N"
         FIRST_DEPLOY="Y"
-        STATE_BUCKET="<bucket>"
+        STATE_BUCKET="bucket-terraform-eks-chd-2023"
         CLUSTER_NAME="<cluster_name>"
     }
 
@@ -22,7 +22,7 @@ pipeline{
             }
             steps{
                 sh'''
-                aws s3 mb s3://<bucket_name>'''
+                aws s3 mb s3://bucket-terraform-eks-chd-2023'''
                 
             }
         }

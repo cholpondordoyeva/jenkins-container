@@ -6,8 +6,8 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "<bucket_name>"
-    key    = "<state_key>"
+    bucket = "bucket-terraform-chd-2023"
+    #key    = "<state_key>"
     region = "us-east-1"
   }
 }
